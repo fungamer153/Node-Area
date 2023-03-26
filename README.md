@@ -5,6 +5,14 @@ Determine if anything is inside of a specified area
 ## void:IsWithin(Target:basePart, Folder:ObjectValue, MinRadius:integer, MinYPos:integer, Direction:string)
 ### Return value: `boolean`
 
+#### Target - The part you wish to track
+#### Folder - The folder that contains all the points
+#### MinRadius - The higher the degree is the more accurate the detection will be
+#### MinYPos - Can be left blank, min pos of target before the script starts to detect it
+#### Direction - Can be left blank, the direction in which the area is detected Up/Down
+
+**Note: You must label all points from 1-x in ascending order, otherwise the area will not work because it cannot accurately calculate the degree inside of the whole area**
+
 ```lua
 --// Services
 local SS = game:GetService('ServerScriptService')
