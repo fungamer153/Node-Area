@@ -1,4 +1,3 @@
-```lua
 --// Initialization
 local Module = {}
 Module.__index = Module
@@ -60,4 +59,3 @@ end
 
 --// Return
 return Module
-```
